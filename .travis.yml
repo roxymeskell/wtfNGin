@@ -1,8 +1,0 @@
-sudo: required
-
-langauge: generic
-
-before_install:
-  - docker build -t rbuzzell/roxy-node .
-  - docker login -u "$HUB_USERNAME" -p "$HUB_PASSWORD"
-  - docker push rbuzzell/roxy-node
